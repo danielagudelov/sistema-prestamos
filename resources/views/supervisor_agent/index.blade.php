@@ -25,7 +25,7 @@
                                         <td><span class="value">{{$client->wallet_name}}</span></td>
                                         <td><span class="value">{{$client->country}}</span></td>
                                         <td><span class="value">{{$client->address}}</span></td>
-                                        <td><span class="value">{{$client->base_total}}</span></td>
+                                        <td><span class="value">{{number_format($client->base_total,2, ",",".")}}</span></td>
                                         <td>
                                             <a href="{{url('supervisor/agent')}}/{{$client->id}}/edit" class="btn btn-success btn-xs">Base</a>
                                         </td>
